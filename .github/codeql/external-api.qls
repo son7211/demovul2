@@ -7,3 +7,12 @@
 - include:
     id:
       - python/untrusted-data-to-external-api
+
+- import: codeql-suites/go-security-extended.qls
+  from: codeql-go
+
+- qlpack: codeql-go
+
+- include:
+    id:
+      - go/untrusted-data-to-external-api
