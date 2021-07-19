@@ -1,0 +1,9 @@
+- description: "CodeQL External API Suite"
+
+- import: codeql-suites/python-security-extended.qls
+  from: codeql-python
+
+- qlpack: codeql-python
+- include:
+    id:
+      - python/untrusted-data-to-external-api
